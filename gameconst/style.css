@@ -1,0 +1,37 @@
+* {
+	padding:0;
+	margin:0;
+	outline: none;
+	text-decoration: none;
+}
+
+body {
+	background:#222222;
+}
+
+#win {
+	display:grid;
+	height:90vh;
+	background:#333333;
+	align-items:center;
+	justify-items:center;
+}
+
+#console {
+	max-height: 20vh;
+	overflow-y: scroll;
+	background: #333333;
+}
+
+#write-console {
+	width: calc(100vw - 5px);
+	padding: 0px 0px 0px 5px;
+	color: #44cc44;
+	background: #223340;
+	border: 0px;
+}
+
+#canvas {
+	width:100vw;
+	height:90vh;
+}

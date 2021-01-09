@@ -1,0 +1,12 @@
+{
+  "name": "consoleapp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "preferGlobal": true,
+    "bin": {
+      "cli": "./main.js"
+    },
+  "author": "admenmod<admenmod@gmail.com>",
+  "license": "ISC"
+}

@@ -1,0 +1,46 @@
+* {
+	padding: 0;
+	margin: 0;
+	outline: none;
+}
+body {
+	color: #eeeeee;
+	background: #222222;
+}
+
+#canvas {
+	overflow: scroll;
+	word-wrap: break-word;
+	height: 100vh;
+	max-height: 100vh;
+}
+
+.win {
+	display: grid;
+	height: 100%;
+	grid-template-rows: auto max-content;
+}
+.textview {
+	padding: 10px;
+	background: #ffffff11;
+}
+.links {
+	display: grid;
+	padding: 5px;
+	text-align: center;
+	user-select: none;
+}
+
+button.moveMenu {
+	color: #eeeeee;
+	margin: 5px;
+	padding: 2vmax 4vmax;
+	font-size: 3vmax;
+	border-radius: 5px;
+	border: 1px solid #77ee00;
+	background: #004477;
+	transition: all 200ms linear;
+} button.moveMenu:active {
+	background: #447700;
+	text-shadow: 1px 1px 5px #000000;
+}

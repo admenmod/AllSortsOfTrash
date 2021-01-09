@@ -1,0 +1,22 @@
+* {
+	padding: 0;
+	margin: 0;
+}
+
+#canvas {
+	user-select: none;
+}
+
+.menubar {
+	width: 96%;
+	padding: 2%;
+	background: rgba(50, 100, 50, 0.7);
+} .menubar:active {
+	background: rgba(50, 50, 50, 0.7);
+}
+
+#ccc {
+	width: 100%;
+	border: none;
+	background: transparent;
+}

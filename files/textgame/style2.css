@@ -1,0 +1,50 @@
+* {
+	padding: 0;
+	margin: 0;
+	outline: none;
+}
+body {
+	color: #eeeeee;
+	background: #222222;
+}
+button {
+	padding: 5px;
+	color: #eeeeee;
+	border-color: #33aa3377;
+	background: #3333aa;
+}
+
+.gui {height: 100%;}
+.stats-menu {
+	height: 100%;
+	background: #203654;
+}
+
+.statsPleyars-table {
+	margin: auto;
+	width: 100%;
+	background: #203654;
+}
+.statsPleyars-table > table {
+	width: 100%;
+	background: #00000044;
+//	background: #172232;
+	border-collapse: collapse;
+}
+
+.statsPleyars-table > table .cell {
+	padding: 5px;
+	height: 20px;
+	width: 50%;
+	border: 1px solid #aaaaaa80;
+}
+
+.statsPleyars-table > table > tbody > *:nth-child(2n) {
+	background: #00000044;
+}
+.statsPleyars-table > table tr > *:nth-child(1) {
+	color: #33cc33;
+}
+.statsPleyars-table > table tr > *:nth-child(2) {
+	color: #ff2626;
+}
