@@ -81,18 +81,13 @@ scenes.main = function() {
 		setTickout.updata();
 		let r = 0, s = 0, sla = 0;
 		if(shipLargeBody.targets.length) {
-			let angleToTarget = panel.r = r = shipLargeBody.getPosC().rotate(shipLargeBody.targets[0]);
+			let target = shipLargeBody.targets[0];
 			
+			let shipRot = vec2(Math.cos(shipLargeBody.angle), Math.sin(shipLargeBody.angle));
+			let targetRot = target.buf().minus(shipLargeBody.getPosC()).normalize();
 			
-			
-			sla = panel.sla = /*loopNum(*/shipLargeBody.angle/*, -Math.PI, Math.PI)*/;
-			
-			let s = panel.s = angleToTarget-sla; //shipLargeBody.angle;
-			
-			shipLargeBody.angle += (Math.sign(s)*0.02);
-			shipLargeBody.vel.moveAngle(Math.max(Math.cos(s), 0)*0.02, shipLargeBody.angle);
-			
-			
+			shipLargeBody.angle += Math.sign(shipRot.cross(targetRot)) * 0.01;
+			shipLargeBody.vel.moveAngle(Math.max(shipRot.dot(targetRot), 0) * 0.03, shipLargeBody.angle);
 			
 			if(shipLargeBody.getPosC().getDistance(shipLargeBody.targets[0]) < 50) shipLargeBody.targets.shift();
 		};
